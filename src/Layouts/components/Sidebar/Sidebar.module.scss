@@ -1,0 +1,49 @@
+.sidebar {
+    width: 348px;
+    padding: 20px 0 26px 8px;
+    margin-left: 3px;
+    overflow: scroll;
+}
+
+.container {
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    width: 356px;
+    background: rgba(255, 255, 255, 1);
+    position: fixed;
+    z-index: 99;
+    perspective-origin: right top;
+    top: 60px;
+    bottom: 0;
+    transition: background 3s;
+    /* width */
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: transparent;
+    }
+
+    &:hover::-webkit-scrollbar-thumb {
+        background: rgba(22, 24, 35, 0.10);
+    }
+}
+
+.copy-right {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+}

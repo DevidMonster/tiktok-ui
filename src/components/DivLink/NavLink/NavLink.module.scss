@@ -1,0 +1,14 @@
+.link {
+    color: rgba(22, 24, 35, 0.5);
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    display: inline-block;
+    margin-right: 6px;
+    margin-top: 5px;
+
+    &:hover {
+        -webkit-text-decoration: underline;
+        text-decoration: underline;
+    }
+}
